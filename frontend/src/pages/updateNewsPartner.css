@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.main-container-Update-News {
+  margin: 0 auto;
+
+  max-width: 450px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-edit-news {
+  margin-top: 120px;
+}
+.title-news-partner {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.img-news-partner {
+  width: 100%;
+}
+
+.input-partner-image {
+  width: 100%;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 0px 14px 0px;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+}
+
+.label-image,
+.label-title,
+.label-lead,
+.label-text,
+.label-category {
+  font-size: 1.2em;
+  line-height: 28px;
+  color: #696969;
+}
+
+.input-edit-partner {
+  width: 100%;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+.select-edit-partner-news {
+  width: 100%;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.div-edit-partner-news {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #e6e6e6;
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1.1em;
+  padding: 0 20px;
+  width: 100%;
+}
+.div-edit-partner-news .fas {
+  color: #888;
+  transition: color 0.4s;
+}
+
+.div-edit-partner-news:hover .fas {
+  color: rgb(224, 84, 28);
+}
+::-webkit-file-upload-button {
+  background: #e6e6e6;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+::-webkit-file-upload-button:hover {
+  background: #cacaca;
+}
+
+@media (min-width: 780px) {
+  .main-container-Update-News {
+    max-width: 500px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-section {
+  margin-top: 135px;
+  display: inline-block;
+}
+
+.btn-carousel-next {
+  width: 5%;
+  margin-left: 5px;
+}
+
+.btn-carousel-prev {
+  width: 5%;
+  margin-right: 5px;
+}
+
+.btn-carousel {
+  width: 100%;
+}
+
+.carousel-section h1 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 23px;
+  color: rgb(220 215 215);
+}
+
+.carousel {
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.carousel ul {
+  display: flex;
+  width: 100%;
+}
+
+.carousel .container-news {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 3px 5px 0px rgb(0, 0, 0 / 18%);
+}
+
+.container-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.582);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+
+@media (min-width: 765px) {
+  .carousel .container-news {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  .carousel-section h1 {
+    margin-left: 34px;
+  }
+
+  .btn-carousel-next {
+    width: 3%;
+  }
+
+  .btn-carousel-prev {
+    width: 3%;
+  }
+}
+
+@media (min-width: 980px) {
+  .container-title {
+    font-size: 18px;
+  }
+
+  .carousel-section h1 {
+    margin-left: 75px;
+    font-size: 20px;
+  }
+  .carousel-section {
+    margin-top: 150px;
+  }
+
+  .btn-carousel-next {
+    width: 2%;
+  }
+
+  .btn-carousel-prev {
+    width: 2%;
+  }
+}

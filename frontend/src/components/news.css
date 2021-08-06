@@ -1,0 +1,299 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.news {
+  width: 95%;
+  padding: 10px;
+  color: grey;
+  margin: 20px auto;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.18);
+}
+
+.news h1 {
+  color: rgb(88, 88, 88);
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.news h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.news p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.imagenes {
+  width: 100%;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.icono {
+  width: 20%;
+  height: 70px;
+}
+
+.comment {
+  background-color: rgb(194, 194, 194);
+  padding: 20px;
+  margin: 10px auto;
+  width: 95%;
+}
+
+.avatar-noticia {
+  width: 8%;
+
+  border-radius: 50%;
+}
+
+.buttons-vote {
+  border-radius: 5px;
+  margin-top: -10px;
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter-vote {
+  color: white;
+  font-weight: bold;
+}
+
+.mas {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+} */
+
+/* .button-vote {
+  /* position: absolute;
+  left: 50%; */
+
+/* 
+.noticias-flex {
+  display: flex;
+  align-items: center;
+} */
+/* .counter-vote {
+  position: absolute;
+  left: 70%;
+} */
+
+.news {
+  width: 95%;
+  padding: 10px;
+  color: grey;
+  margin: 20px auto;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+}
+
+.news h1 {
+  color: rgb(88, 88, 88);
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.container-publicado {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-publicado h2 {
+  font-size: 10px;
+}
+
+.container-publicado h2 span {
+  color: rgb(215, 66, 33);
+}
+
+.container-publicado a {
+  margin: 2px;
+  width: 7%;
+}
+
+.container-publicado a img {
+  border: 2px solid grey;
+  width: 100%;
+}
+
+.news h3 {
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.news p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.imagenes {
+  width: 100%;
+}
+
+.fuego {
+  position: absolute;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  bottom: 7px;
+  left: 0;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.icono {
+  width: 20%;
+  height: 70px;
+}
+
+.avatar-noticia {
+  width: 8%;
+  border-radius: 50%;
+}
+
+.buttons-vote {
+  border-radius: 5px;
+  margin-top: -10px;
+  background: rgb(51, 51, 51 / 9%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter-vote {
+  color: white;
+  font-weight: bold;
+}
+
+.mas {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.noticias-flex {
+  position: relative;
+}
+
+.news-info-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.fa-comments {
+  font-size: 25px;
+}
+
+.news-info-container a {
+  background-color: rgb(199, 199, 199);
+  border-radius: 13px;
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: bold;
+  padding: 1px 10px 1px 10px;
+  text-transform: uppercase;
+}
+
+/* .news-info-container {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+} */
+
+@media (min-width: 765px) {
+  .news h1 {
+    font-size: 20px;
+  }
+
+  .container-publicado h2 {
+    font-size: 12px;
+  }
+
+  .news h3 {
+    font-size: 14px;
+  }
+
+  .news p {
+    font-size: 14px;
+  }
+
+  .counter-vote {
+    font-size: 22px;
+  }
+
+  .mas {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 980px) {
+  .news {
+    padding: 30px;
+  }
+
+  .news h1 {
+    font-size: 30px;
+  }
+
+  .container-publicado h2 {
+    font-size: 15px;
+  }
+
+  .container-publicado a {
+    width: 5%;
+  }
+
+  .news h3 {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  .news p {
+    font-size: 16px;
+  }
+
+  .fa-comments {
+    font-size: 40px;
+  }
+
+  .news-info-container {
+    margin-top: 25px;
+  }
+
+  .news-info-container span {
+    font-size: 25px;
+  }
+
+  .news-info-container a {
+    font-size: 15px;
+    padding: 1px 20px 1px 20px;
+  }
+}

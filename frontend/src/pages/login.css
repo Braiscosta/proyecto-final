@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.side {
+  display: none;
+}
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  margin-top: 120px;
+  max-width: 450px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.separator {
+  width: 150px;
+  height: 4px;
+  background-color: rgb(224, 84, 28);
+  margin: 24px;
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: #696969;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #e6e6e6;
+  margin-bottom: 16px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  padding: 0 20px;
+  width: 300px;
+}
+.input-login {
+  width: 100%;
+  background: #e6e6e6;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 14px 14px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+}
+
+.container-input .fas {
+  color: #888;
+  transition: color 0.4s;
+}
+
+.container-input:hover .fas {
+  color: rgb(224, 84, 28);
+}
+
+.submit {
+  width: 100%;
+  color: #fff;
+  padding: 14px 14px;
+  margin: 16px auto;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: linear-gradient(
+    to left bottom,
+    #d23723,
+    #e35a1a,
+    #f07b0e,
+    #f99b00,
+    #ffbb01
+  );
+  cursor: pointer;
+  transition: opacity 0.4s;
+}
+
+.submit:hover {
+  opacity: 0.9;
+  animation-delay: 300ms;
+  animation-duration: 4s;
+  animation-name: escalador;
+}
+
+@keyframes escalador {
+  100% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+}
+/* ----  Responsive  ----  */
+
+@media (min-width: 765px) {
+  .login-container {
+    margin-top: 150px;
+  }
+
+  .welcome-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 980px) {
+  .main-login {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-container {
+    margin-top: 150px;
+  }
+
+  .side {
+    background: url(./img/bkn.png) no-repeat;
+    background-size: 100% 102%;
+    display: block;
+  }
+
+  .container-input {
+    width: 350px;
+  }
+}

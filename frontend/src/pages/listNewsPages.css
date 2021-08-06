@@ -1,0 +1,117 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas: "main";
+}
+
+.grid-main {
+  color: white;
+  grid-area: main;
+}
+
+.grid-aside {
+  display: none;
+  color: white;
+  grid-area: aside;
+  padding-right: 10px;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  background: linear-gradient(
+    to left bottom,
+    #d23723,
+    #e35a1a,
+    #f07b0e,
+    #f99b00,
+    #ffbb01
+  );
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-white::after {
+  background: linear-gradient(
+    to left bottom,
+    #d23723,
+    #e35a1a,
+    #f07b0e,
+    #f99b00,
+    #ffbb01
+  );
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (min-width: 765px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-template-areas: "main main main aside";
+  }
+
+  .grid-aside {
+    display: block;
+  }
+}
+
+@media (min-width: 980px) {
+  .grid-container {
+    margin: 25px auto;
+    max-width: 1400px;
+  }
+}
